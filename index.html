@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الإرث الصوفي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>الإرث الصوفي</h1>
+    <p class="subtitle">مكتبة إلكترونية لملفات PDF — افتح الكتب مباشرة في المتصفح</p>
+  </header>
+
+  <main class="container">
+    <section class="search">
+      <input id="searchInput" placeholder="ابحث عن اسم الملف أو رقم الملف..." />
+    </section>
+
+    <section class="library">
+      <h2>قائمة الكتب (20 ملف)</h2>
+      <ul id="pdfList" class="pdf-list"></ul>
+    </section>
+
+    <section class="viewer" id="viewerSection" hidden>
+      <div class="viewer-header">
+        <button id="backBtn">◀ العودة إلى القائمة</button>
+        <h3 id="viewerTitle">عرض الملف</h3>
+      </div>
+      <div class="pdf-viewer">
+        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    مصنوع بواسطة موقع: الإرث الصوفي — للاستخدام المحلي والمجاني
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
